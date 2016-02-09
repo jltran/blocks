@@ -11,7 +11,7 @@
 //--------------------------------------*/
 
 // Brand colours
-$brand-primary:   #111111;
+$brand-primary:   darkslategray;
 $brand-secondary: #222222;
 $brand-tertiary:  #333333;
 
@@ -30,8 +30,8 @@ $white:           #fff;
 //--------------------------------------*/
 
 // Define font stacks
-$primary-font:    "Helvetica Neue", Helvetica, Arial, sans-serif;
-$secondary-font:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+$primary-font:    "Open Sans", Helvetica, Arial, sans-serif;
+$secondary-font:  "Open Sans", Helvetica, Arial, sans-serif;
 
 // Base font sizes
 $base-font-size:    16px!default;
@@ -53,7 +53,6 @@ $h6-size:           14px!default; // .zeta
 // Small sizes
 $milli-size:        12px!default;
 $micro-size:        10px!default;
-
 
 //--------------------------------------*\
 // Project Globals

@@ -1,12 +1,12 @@
 {
-  "name": "grunt-project",
-  "title": "A simple Grunt project",
-  "description": "A basic Grunt project to get started.",
+  "name": "cf-blocks",
+  "title": "cf-blocks",
+  "description": "Page with blocks",
   "version": "0.1.0",
-  "homepage": "http://markgoodyear.com",
+  "homepage": "http://jason.lt",
   "author": {
-    "name": "Mark Goodyear",
-    "url": "http://markgoodyear.com"
+    "name": "Jason Tran",
+    "url": "http://jason.lt"
   },
   "license": "MIT",
   "engines": {
@@ -20,7 +20,6 @@
     "grunt-contrib-sass": "~0.4.1",
     "grunt-svgmin": "~0.2.0",
     "grunt-contrib-imagemin": "~0.1.4",
-    "grunt-svg2png": "~0.2.0",
     "grunt-contrib-watch": "~0.5.1",
     "grunt-contrib-clean": "~0.5.0"
   }

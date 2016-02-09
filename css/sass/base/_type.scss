@@ -5,6 +5,7 @@
 // Headings
 h1, .alpha {
   font-size: $h1-size;
+  margin: .33em 0;
 }
 
 h2, .beta {
@@ -25,4 +26,11 @@ h5, .epsilon {
 
 h6, .zeta {
   font-size: $h6-size;
+}
+
+.bold {
+  font-weight: 700;
+}
+.thin {
+  font-weight: 200;
 }

@@ -74,20 +74,6 @@ module.exports = function(grunt) {
       }
     },
 
-
-    /**
-     * Convert .svg to .png
-     * @github.com/dbushell/grunt-svg2png
-     */
-    svg2png: {
-      dist: {
-        files: [{
-          src: ['<%= dir.img %>/**/*.svg'],
-        }],
-      }
-    },
-
-
     /**
      * JSHint
      * @github.com/gruntjs/grunt-contrib-jshint
@@ -235,7 +221,6 @@ module.exports = function(grunt) {
     'concat:js',        // Concatenate main JS files
     'uglify',           // Minifiy concatenated JS file
     'sass:dist',        // Compile Sass with distribution settings
-    'svg2png',          // Convert svg files to png
     'svgmin',           // Compress svg files
     'imagemin',         // Compress jpg/jpeg + png files
   ]);
@@ -246,7 +231,6 @@ module.exports = function(grunt) {
    * run `grunt images`
    */
   grunt.registerTask('images', [
-    'svg2png',          // Convert svg files to png
     'svgmin',           // Compress svg files
     'imagemin',         // Compress jpg/jpeg + png files
   ]);
@@ -263,6 +247,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-svgmin');
-  grunt.loadNpmTasks('grunt-svg2png');
 
 };

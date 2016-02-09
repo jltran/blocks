@@ -1,0 +1,23 @@
+/*--------------------------------------*\
+	Header
+\*--------------------------------------*/
+.header-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0 40px;
+}
+
+.logo {
+  width: 150px;
+}
+
+@media(min-width: 1200px){
+  .header-container{
+    justify-content: flex-start;
+    margin: 10px 0 10px;
+  }
+  .logo{
+    margin-left: 100px;
+  }
+}
