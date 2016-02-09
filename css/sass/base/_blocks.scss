@@ -1,0 +1,31 @@
+//--------------------------------------*\
+// Blocks
+//--------------------------------------*/
+.blocks {
+  margin: 30px 10px;
+}
+
+.block{
+  color: $white;
+}
+
+.left-aligned-content{
+  bottom: 10%;
+}
+
+.block-grey {
+  background-color: $grey;
+  background-clip: content-box;
+}
+.block-yellow {
+  background-color: $yellow;
+  background-clip: content-box;
+}
+.block-lightblue {
+  background-color: $light-blue;
+  background-clip: content-box;
+}
+
+.phone{
+  right: 15%;
+}

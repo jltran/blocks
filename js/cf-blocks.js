@@ -4,7 +4,14 @@ http://jason.lt
 Copyright (c) 2016 Jason Tran
 License: MIT
 */
-// another-script.js for demonstrating file conactenation
-console.log('another-script.js file');
 // main.js
-console.log('main.js file');
+var blocks = [].slice.call(document.getElementsByClassName('block'));
+
+function resizeBlocks(){
+  blocks.forEach(function(d){
+    d.setAttribute('style', 'height:' + d.offsetWidth + 'px');
+  });
+}
+
+window.onresize = resizeBlocks;
+resizeBlocks();
