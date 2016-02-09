@@ -2,17 +2,16 @@
 // Blocks
 //--------------------------------------*/
 .blocks {
-  margin: 30px 10px;
+  margin: 0 auto;
 }
 
 .block{
   color: $white;
+  margin-top: 30px;
+  position: relative;
 }
 
-.left-aligned-content{
-  bottom: 10%;
-}
-
+//color blocks
 .block-grey {
   background-color: $grey;
   background-clip: content-box;
@@ -26,6 +25,94 @@
   background-clip: content-box;
 }
 
+//first block---------------------------------------//
+//phone animations
 .phone{
+  width: 40%;
+  position: absolute;
+  top: 15%;
   right: 15%;
+}
+
+@keyframes rotate-45 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(45deg);
+  }
+}
+
+.block:hover .phone{
+  animation: rotate-45 1s;
+  animation-fill-mode: forwards;
+}
+
+//content alignment
+.left-aligned-content{
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+}
+.left-aligned-header-orange:before{
+  content: '_';
+  display: block;
+  color: $accent;
+  font-size: 72px;
+}
+
+//second block ----------------------------------------//
+.millennials{
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  width: 80%;
+}
+.center-aligned-content{
+  position: absolute;
+  width: 80%;
+  bottom: 10%;
+  left: 15%;
+}
+
+@keyframes enlarge{
+  from{
+    width: 80%;
+    left: 10%;
+  }
+  to{
+    width: 90%;
+    left: 5%;
+  }
+}
+.block:hover .millennials{
+  animation: enlarge 1s;
+  animation-fill-mode: forwards;
+}
+
+//third block------------------------------------------//
+.left-aligned-header-yellow:before{
+  content: '_';
+  display: block;
+  color: $yellow;
+  font-size: 72px;
+}
+
+.housing-plan{
+  width: 50%;
+  position: absolute;
+  top: 15%;
+  right: 15%;
+}
+@keyframes move{
+  from{
+    right: 15%;
+  }
+  to{
+    right: 25%;
+  }
+}
+.block:hover .housing-plan{
+  animation: move 1s;
+  animation-fill-mode: forwards;
 }

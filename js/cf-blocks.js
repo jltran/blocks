@@ -5,6 +5,7 @@ Copyright (c) 2016 Jason Tran
 License: MIT
 */
 // main.js
+//Size blocks
 var blocks = [].slice.call(document.getElementsByClassName('block'));
 
 function resizeBlocks(){

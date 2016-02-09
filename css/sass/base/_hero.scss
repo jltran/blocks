@@ -5,10 +5,18 @@
   background-color: $grey;
   color: $white;
   padding: 40px 0;
-  margin: 0 10px;
+  margin: 0;
 }
 h5{
   line-height: 1.4;
+}
+
+@media(min-width: 1200px){
+  .hero{
+    padding: 72px 0;
+    margin: 0 10px;
+
+  }
 }
 
 //Can pattern be abstracted?
@@ -16,5 +24,6 @@ h1 + h1:after{
   content: '_';
   display: block;
   color: $accent;
-  margin-top: -30px;
+  margin-top: -65px;
+  font-size: 72px;
 }

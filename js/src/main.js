@@ -1,4 +1,5 @@
 // main.js
+//Size blocks
 var blocks = [].slice.call(document.getElementsByClassName('block'));
 
 function resizeBlocks(){
