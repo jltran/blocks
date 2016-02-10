@@ -500,14 +500,26 @@ h5 {
   line-height: 1.4;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jason\/Projects\/columnfive\/blocks\/css\/sass\/base\/_hero\.scss}line{font-family:\0000313}}
+.only-lg {
+  display: none;
+}
+
 @media (min-width: 1200px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jason\/Projects\/columnfive\/blocks\/css\/sass\/base\/_hero\.scss}line{font-family:\0000315}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jason\/Projects\/columnfive\/blocks\/css\/sass\/base\/_hero\.scss}line{font-family:\0000319}}
   .hero {
     padding: 72px 0;
     margin: 0 10px;
   }
-}
+
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jason\/Projects\/columnfive\/blocks\/css\/sass\/base\/_hero\.scss}line{font-family:\0000323}}
+  .only-lg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jason\/Projects\/columnfive\/blocks\/css\/sass\/base\/_hero\.scss}line{font-family:\0000331}}
 h1 + h1:after {
   content: '_';
   display: block;

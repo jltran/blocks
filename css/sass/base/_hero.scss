@@ -10,12 +10,20 @@
 h5{
   line-height: 1.4;
 }
+.only-lg{
+  display: none;
+}
+
 
 @media(min-width: 1200px){
   .hero{
     padding: 72px 0;
     margin: 0 10px;
-
+  }
+  .only-lg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
