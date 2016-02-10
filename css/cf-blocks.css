@@ -547,7 +547,7 @@ h1 + h1:after {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jason\/Projects\/columnfive\/blocks\/css\/sass\/base\/_blocks\.scss}line{font-family:\0000330}}
-.phone {
+.phone, .phone-svg {
   width: 40%;
   position: absolute;
   top: 15%;
@@ -563,7 +563,7 @@ h1 + h1:after {
   }
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jason\/Projects\/columnfive\/blocks\/css\/sass\/base\/_blocks\.scss}line{font-family:\0000346}}
-.block:hover .phone {
+.block:hover .phone-svg {
   animation: rotate-45 1s;
   animation-fill-mode: forwards;
 }

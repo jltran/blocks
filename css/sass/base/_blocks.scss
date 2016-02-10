@@ -27,7 +27,7 @@
 
 //first block---------------------------------------//
 //phone animations
-.phone{
+.phone, .phone-svg{
   width: 40%;
   position: absolute;
   top: 15%;
@@ -43,7 +43,7 @@
   }
 }
 
-.block:hover .phone{
+.block:hover .phone-svg{
   animation: rotate-45 1s;
   animation-fill-mode: forwards;
 }
