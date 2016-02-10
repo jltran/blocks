@@ -20,7 +20,6 @@ resizeBlocks();
 //Animate using gsap
 function animatePhone(){
   var phoneSvg = [].slice.call(document.getElementsByClassName('phone-svg'));
-  console.log(phoneSvg);
   phoneSvg.forEach(function(thisPhoneSvg){
     var svgDoc = thisPhoneSvg.contentDocument;
     var phoneObject = svgDoc.getElementById('phone');
@@ -28,6 +27,25 @@ function animatePhone(){
   });
 }
 
-window.onload = animatePhone;
+function animateMillennials(){
+  var millenialWholeSvgs = [].slice.call(document.getElementsByClassName('millennials'));
+  millenialWholeSvgs.forEach(function(thisMillennialSvg){
+    var svgDoc = thisMillennialSvg.contentDocument;
+    var tl = new TimelineLite();
+    var phoneOrder = [3, 0, 4, 1];
+    for (var i in phoneOrder){
+      var millennialPhone = svgDoc.getElementById('millennials-' + phoneOrder[i]);
+      tl.to(millennialPhone, 1, {y: '-=25px'});
+    }
+    var underline = svgDoc.getElementById('millennials_underline');
+    tl.to(underline, 1, {y: '-=25px'});
+    tl.to(thisMillennialSvg, 1, {y: '+=25px'});
+  });
+}
+
+window.onload = function(){
+  animatePhone();
+  animateMillennials();
+};
 
 //beforeunload <- should remove event handlers
