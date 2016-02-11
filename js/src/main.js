@@ -1,17 +1,21 @@
 // main.js
-//Size blocks
+//RESIZE BLOCKS ============================================
+//Because getElementsByClassName does not return an actual array...
 var blocks = [].slice.call(document.getElementsByClassName('block'));
 
-//set block height equal to width. re-run on window resize.
+//Set block height equal to width. re-run on window resize.
 function resizeBlocks(){
   blocks.forEach(function(d){
     d.setAttribute('style', 'height:' + d.offsetWidth + 'px');
   });
 }
 window.onresize = resizeBlocks;
+
+//Run once on js load
 resizeBlocks();
 
-//Animate using gsap
+//ANIMATIONs =================================================
+//Animate first block on init.
 function animatePhone(){
   var phoneSvg = [].slice.call(document.getElementsByClassName('phone-svg'));
   phoneSvg.forEach(function(thisPhoneSvg){
@@ -22,6 +26,7 @@ function animatePhone(){
   });
 }
 
+//Animate sequence of movements on init.
 function animateMillennials(){
   //grab all svgs for second block (since there are multiple copies...)
   var millenialWholeSvgs = [].slice.call(document.getElementsByClassName('millennials'));
@@ -43,6 +48,7 @@ function animateMillennials(){
   });
 }
 
+//Get data to fade out towarsd phone. Phone shows image.
 function animateDataTransfer(){
   var svg = document.getElementsByClassName('data-transfer')[0];
   var svgDoc = svg.contentDocument;
@@ -57,6 +63,7 @@ function animateDataTransfer(){
   var dataExit = svgDoc.getElementById('dataexit');
   tl.to(dataExit, 1, {x: '+=58px', opacity: 0}, '-=1');
 
+  //Phone displays connected image then fades.
   var connected = svgDoc.getElementById('connected-icon');
   tl.to(connected, 2, {opacity: 1}, '-=1');
   tl.to(connected, 1, {opacity: 0});
